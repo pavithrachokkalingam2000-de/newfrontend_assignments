@@ -1,0 +1,27 @@
+.EXTERNAL{
+    background-color: black;
+    color: white;
+}
+
+#heading{
+    background-color: beige;
+    color: orange;
+}
+.About{
+    background-color: blue;
+    color: white;
+}
+h2{
+    background-color: greenyellow;
+    color: red;
+}
+#styles{
+    background-color: azure;
+    color: yellow;
+}
+
+#NEW{
+    background-color: rgb(1, 14, 20);
+    color: pink;
+}
+
