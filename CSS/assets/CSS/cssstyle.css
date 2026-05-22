@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+
+    background-color: aquamarine;
+    color: blue;
+    padding: 20px;
+    border: 30px;
+    margin: 20px;
+}
+.new{
+    background-color: black;
+    color:white ;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    padding: 10px;
+    border: 10px;
+    margin: 20;
+}
+.para{
+    background-color: skyblue;
+    color:red;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+}
+.sub{
+    color: black;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.images{
+    
+    padding: 30px;
+    border: 20px;
+    margin: auto;
+    width: 30px;
+    height: 10px;
+}
