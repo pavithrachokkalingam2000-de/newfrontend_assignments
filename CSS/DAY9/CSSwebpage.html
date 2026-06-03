@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over all view in CSS</title>
+    <link rel="stylesheet" href="../assets/CSS/CSSwebpage.css">
+</head>
+<body class="view">
+    <div class="parent">
+         <h1 class="title">CSS OVERALL VIEW</h1>
+        <div>
+         <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows you to control the layout, colors, fonts, and overall appearance of web pages. CSS works by applying styles to HTML elements, which can be done through various selectors and properties.</p>
+         <br>
+         <h2>Key Concepts in CSS:</h2>
+        <ul class="concepts">
+        <li>Selectors</li>
+        <li>Properties</li>
+        <li>Values</li>
+        <li>Cascading</li>
+     </ul>
+
+    </div>
+
+    <div>
+        <h2>Selectors:</h2>
+    <p>Selectors are used to target specific HTML elements to apply styles. Common selectors include:</p>
+    <br>
+    <ul class="concepts">
+        <li>Element Selector: Targets all elements of a specific type (e.g., p for paragraphs).</li>
+        <li>Class Selector: Targets elements with a specific class attribute (e.g., .my-class).</li>
+        <li>ID Selector: Targets a single element with a specific ID attribute (e.g., #my-id).</li>
+        <li>Attribute Selector: Targets elements based on their attributes (e.g., [type="text"]).</li>
+    </ul>
+    </div>
+
+    <div>
+        <h2>Properties and Values:</h2>
+    <p>CSS properties define the aspects of an element's appearance that you want to change, while values specify the settings for those properties. For example:</p>
+    <br>
+    <ul class="concepts">
+        <li>color: red; (sets the text color to red)</li>
+        <li>font-size: 16px; (sets the font size to 16 pixels)</li>
+        <li>background-color: blue; (sets the background color to blue)</li>
+        <li>margin: 10px; (sets the margin around an element to 10 pixels)</li>
+    </ul>
+
+    </div>
+    <div>
+          <h2>Cascading:</h2>
+          <p>The "cascading" aspect of CSS refers to the way styles are applied when multiple rules target the same element. CSS uses a specific order of precedence to determine which styles take effect, based on factors such as specificity, importance, and source order. This allows for flexibility in
+          styling and helps resolve conflicts when multiple rules apply to the same element.</p> 
+          <br>
+    </div>
+    
+       <div>
+        <h3>BOX MODEL</h3>
+        <p>The CSS box model is a fundamental concept that describes how elements are structured and how their dimensions are calculated. Each element in HTML is represented as a rectangular box, which consists of four main components:</p>
+        <ul class="concepts">
+            <li>Content: The actual content of the element (e.g., text, images).</li>
+            <li>Padding: The space between the content and the border. It can be set using the padding property.</li>
+            <li>Border: The line that surrounds the padding and content. It can be styled using the border property.</li>
+            <li>Margin: The space outside the border that separates the element from other elements. It can be set using the margin property.</li>
+        </ul>
+        
+        <ul class="concepts">
+            <li>Width = Content + Padding + Border + Margin</li>
+            <li>Height = Content + Padding + Border + Margin</li>
+        </ul>
+
+       </div>
+      <div>
+          <h2>FLEXBOX</h2>
+        <p>Flexbox, or the Flexible Box Layout, is a CSS layout module that provides an efficient way to arrange and align items within a container. It allows for responsive design and makes it easier to create complex layouts without using floats or positioning. The main properties of Flexbox include:</p>
+        <br>
+        <ul class="concepts">
+            <li>display: flex; (enables Flexbox on a container)</li>
+            <li>flex-direction: row | column; (defines the direction of the flex items)</li>
+            <li>justify-content: flex-start | center | flex-end | space-between | space-around; (aligns items along the main axis)</li>
+            <li>align-items: stretch | flex-start | center | flex-end; (aligns items along the cross axis)</li>
+            <li>flex-wrap: nowrap | wrap; (controls whether items wrap onto multiple lines)</li>
+        </ul>
+      </div>
+        <div>
+            <h2>GRID</h2>
+        <p>Grid is a CSS layout module that provides a way to create complex, responsive layouts with rows and columns. It allows for precise control over the placement and sizing of elements within a container. The main properties of Grid include:</p>
+        <br>
+        <ul class="concepts">
+            <li>display: grid; (enables Grid on a container)</li>
+            <li>grid-template-columns: (defines the number and size of columns)</li>
+            <li>grid-template-rows: (defines the number and size of rows)</li>
+            <li>grid-column-start: grid-column-end: (controls the horizontal position of an item)</li>
+            <li>grid-row-start: grid-row-end: (controls the vertical position of an item)</li>
+        </ul>
+
+        </div>
+        <div>
+            <h2>Pseudo-Classes</h2>
+        <p>Pseudo-classes are keywords that target elements based on their state or position in the document tree. They allow you to apply styles to elements under specific conditions. Some common pseudo-classes include:</p>
+        <br>
+        <ul class="concepts">
+            <li>:hover: Targets an element when the user hovers over it.</li>
+            <li>:focus: Targets an element when it has focus (e.g., when a user clicks on a form field).</li>
+            <li>:nth-child(n): Targets the nth child of its parent element.</li>
+            <li>:first-child: Targets the first child of its parent element.</li>
+            <li>:last-child: Targets the last child of its parent element.</li>
+        </ul>
+
+        </div>
+        <div>
+            <h2>Pseudo-Elements</h2>
+           <p>Pseudo-elements are keywords that allow you to style specific parts of an element. They can be used to add decorative content or style certain aspects of an element. Some common pseudo-elements include:</p>
+          <ul>
+            <li>::before: Inserts content before the element's content.</li>
+            <li>::after: Inserts content after the element's content.</li>
+            <li>::first-line: Styles the first line of text within an element.</li>
+            <li>::first-letter: Styles the first letter of text within an element.</li>
+          </ul>
+            
+        </div>
+        <div>
+             <h2>Positioning</h2>
+             <p>CSS provides several methods for positioning elements on a page:</p>
+             <br>
+                <ul class="concepts">
+                    <li>Static: The default positioning method. Elements are positioned according to the normal document flow.</li>
+                    <li>Relative: Elements are positioned relative to their normal position in the document flow.</li>
+                    <li>Absolute: Elements are positioned relative to the nearest positioned ancestor (or the initial container if no positioned ancestor exists).</li>
+                    <li>Fixed: Elements are positioned relative to the viewport (the browser window) and remain in place even when the page is scrolled.</li>
+              </ul>
+        </div>
+        
+        <div>
+            <h2>Media Queries</h2>
+        <p>Media queries allow you to apply different styles based on the characteristics of the device or viewport. They are commonly used for responsive design to ensure that your website looks good on all devices.</p>
+        <p>Syntax:</p>
+        <pre>
+           @media screen and (max-width: 600px) {
+            /* CSS rules */
+           }
+        </pre>
+
+        </div>
+        
+    </div>
+
+    
+    
+
+   
+     
+        
+
+    </body>
+</html>

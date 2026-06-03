@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x:hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.parent{
+    display:grid;
+    background-color:rgb(237, 222, 222);
+    color:white;
+    padding:20px;
+}
+.child{
+    background-color:rgb(214, 26, 26);
+    color:white;
+    padding:10px;
+    height:100px;
+    width:200px;
+    justify-self:center;
+    align-self:center;
+    text-align:center;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:bold;
+    
+}
+.child:hover{
+    transform:scale(1.2);
+    transition:0.5s;
+    
+}

@@ -1,0 +1,39 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x:hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.child{
+    display:flex;
+    padding:20px;
+    gap:10px;
+    background-color:lightblue;
+    border-radius:10px;
+}
+
+.heading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:beige;
+}
+.child img{
+    border-radius:10px;
+    transition:0.5s;
+
+    
+}
+.child img:hover{
+    transform:scale(1.2);
+    rotate:10deg;
+    transition:0.5s smooth;
+    
+}
