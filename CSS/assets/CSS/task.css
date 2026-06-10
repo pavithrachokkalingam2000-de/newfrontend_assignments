@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    overflow-x:hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.logo{
+    background-color: lightgrey;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+.menu a{
+    color: black;
+    gap:20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.about{
+    text-align: center;
+    padding:50px;
+}
+
+.about h1{
+    font-size: 40px;
+}
+.about p{
+    font-size:20px;
+    margin:20px;
+
+}
+.about button{
+    padding:10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+.skills{
+    text-align: center;
+    padding: 50px;
+
+}
+.skill-box{
+    width: 250px;
+    display:inline-block;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px;
+}
+.skill-box:hover{
+    transform: translateY(5px);
+    transition:4s;
+}
+
+.skill-box1{
+    background-color: beige;
+    width:400px;
+    height: 300px;
+    
+
+}
+.skill-box1 button{
+    padding:10px;
+    margin:10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
