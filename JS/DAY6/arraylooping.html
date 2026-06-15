@@ -1,0 +1,387 @@
+<script>
+    // reverse process
+    // let fruits = ["banana","apple","cherry","gova"]
+    // let reverse =[]
+    // let index=0
+    // for(let i=fruits.length-1;i>=0;i--){
+    //     reverse[index]=fruits[i]
+    //     index++
+
+    // }
+    // console.log(reverse);
+
+    console.log('Task 1')
+    let heros = ["vijay","ajith","surya","sk"]
+    for (let i= 0;i<heros.length;i++){
+      console.log(heros[i]);
+
+    }
+    
+    console.log('Task 2')
+    let collections=[200,500,800,400,600]
+    let highest= collections[0]
+    for (let i=1;i<collections.length;i++){
+
+        if(collections[i]>highest){
+          
+          highest=collections[i]; 
+      }
+    
+    }
+    console.log("highest Collection:",highest);
+
+
+     console.log('Task 3')
+     let Collections =[200,500,800,400,600]
+     let lowest = Collections[0]
+     for(let i=1;i>Collections.length;i++){
+        if (Collections[i]<lowest){
+            lowest=Collections[i];
+          }
+
+
+     }
+      console.log("lowest Collection:",lowest);
+
+         
+          
+      console.log('Task 4')
+      let collection=[200,500,800,400,600]
+      let total=0
+      for (let i=0;i<collection.length;i++){
+        total+=collection[i]
+
+      }
+      console.log("total collection:",total);
+
+      console.log('Task 5')
+
+      let averagecollection =[200,500,800,400,600]
+      let Total=0
+      for (let i=0;i<averagecollection.length;i++){
+        Total+=averagecollection[i];
+      }
+      let average = Total/averagecollection.length;
+      console.log(average);
+
+      console.log('Task 6')
+
+      let hero =["Vijay","Ajith","Suriya","SK"]
+      let reverse =[]
+      let index=0
+      for (let i=hero.length-1;i>=0;i--){
+        reverse[index]=hero[i]
+        index++
+      }
+      console.log(reverse);
+
+      console.log('Task 7')
+
+      let fruits =["Apple","Mango","Orange","Banana"]
+      let searchFruit = "Mango"
+      if (fruits.includes(searchFruit)){
+        console.log("fruit Found");
+      }
+
+      console.log('Task 8')
+      let items =["Apple","Mango","Orange","Banana"]
+      let count = 0
+      for (let item of items){
+
+        count++;
+      }
+      console.log("Total items",count);
+
+      console.log('Task 9')
+
+      let heroes =  ["Vijay", "Ajith", "Sivakarthikeyan", "SK"];
+      let longest = heroes[0]
+      for (let i=1;i<heroes.length;i++){
+        if (heroes[i].length>longest.length){
+            longest = heroes[i]
+        }
+      }
+      console.log("Longest hero name:",longest);
+
+
+     
+      console.log('Task 1  Palindrome Check')
+      let movie ="LEVEL"
+      let Reversed = " ";
+      for (let i=movie.length-1;i>=0;i--){
+           Reversed +=movie[i];
+      }
+
+      if(movie===Reversed){
+        console.log("Palindrome");
+      }else{
+        console.log("Not Palindrome");
+      }
+
+       console.log('Task 2 Reverse String')
+       let Hero = "vijay"
+       let reversed = " "
+       for(let i=Hero.length-1;i>=0;i--){
+        reversed+=Hero[i]
+
+       }
+       console.log(reversed);
+       
+       console.log('Task 3 Fibonacci Series')
+       let a=0
+       let b=1
+
+       console.log(a);
+       console.log(b);
+
+       for(let i=3;i<=10;i++){
+        let c=a+b
+        console.log(c);
+
+        a=b
+        b=c
+       }
+
+       console.log('Task 4  Count Vowels')
+      let actor = "SURIYA" 
+      let Count =0
+      for (let i=0;i<actor.length;i++){
+        let ch =actor[i]
+
+        if(
+            ch==="A"||
+            ch==="E"||
+            ch==="I"||
+            ch==="O"||
+            ch==="U"
+        ){
+            Count++;
+        }
+      }
+      console.log("Vowels Count:",Count);
+      
+      console.log('Task 5 Count Character Frequency')
+      let HERO ="VIJAY"
+      let findChar ="A"
+      
+      let COUNT=0
+
+      for(let i=0;i<HERO.length;i++){
+        if(HERO[i]===findChar){
+            COUNT++;
+        }
+      }
+      console.log(COUNT);
+
+      console.log('anagram Check')
+
+      let Word1= "LISTEN"
+      let Word2= "SILENT"
+
+      let str1= Word1.toLowerCase().split("").sort().join("");
+      let str2= Word2.toLowerCase().split("").sort().join("");
+
+      if (str1===str2) {
+        console.log("anagram");
+
+
+      }else{
+        console.log("Not anagram");
+      }
+
+    //   let word1="VIJAY"
+    //   let word2="AJITH"
+
+    //   let Str1= word1.toLowerCase().split("").sort().join("");
+    //   let Str2= word2.toLowerCase().split("").sort().join("");
+
+    //   if(Str1===Str2){
+    //     console.log("anagram");
+
+    //   }else{
+    //     console.log("Not anagram");
+    //   }
+      
+        console.log('Amrstrong number check')
+        
+        let num =153
+
+        let temp =num
+        let sum =0
+
+        while(temp>0){
+            let digit =temp%10
+            sum +=digit*digit*digit;
+            temp= Math.floor(temp/10);
+
+        }
+        if(sum===num){
+            console.log("Armstrong Number");
+        }else{
+            console.log("Not Armstrong Number");
+        }
+
+        console.log('Prime number Check')
+
+        let Num = 17
+        let isprime = true
+        if(Num<=1){
+            isprime= false
+        }else{
+            for(let i=2;i<Num;i++){
+                if(Num%2===0){
+                    isprime=false
+                    break
+                }
+            }
+        }
+        if(isprime){
+            console.log("primenumber");
+        }else{
+            console.log("Not a primenumber");
+        }
+
+        console.log('Factorial check')
+
+        let number=5
+        let factorial=1
+        for(i=1;i<=number;i++){
+            factorial*=i;
+        }
+        console.log("factorial:",factorial);
+
+        console.log('Number reverse')
+
+        let Number=12345
+        let Reverse = 0
+        while(Number>0){
+            let digit=Number%10
+            Reverse=Reverse*10+digit;
+            Number=Math.floor(Number/10);
+        }
+        console.log(Reverse);
+
+        console.log('Task 1 - Find First Element')
+        let Heroes=[
+            "Vijay",
+            "Ajith",
+            "Suriya",
+            "Sk"
+            
+
+        ]
+        console.log(Heroes[0]);
+
+        console.log('Task 2 - Find Last Element')
+
+        let Heros=[
+            "Vijay",
+            "Ajith",
+            "Suriya",
+            "Sk"
+        ]
+          console.log(Heros[3]);
+
+         console.log('Task 3 - Find Middle Element') 
+         let heroe =[
+            "Vijay",
+            "Ajith",
+            "Suriya",
+            "Sk",
+            "Dhanush"
+         ]
+         console.log(heroe[2]);
+
+         console.log('Task 4 - Find Nth Element')
+
+         let HEROES=[
+            "Vijay",
+            "Ajith",
+            "Suriya",
+            "Sk",
+            "Dhanush"
+         ]
+         let n=4
+         console.log(HEROES[n-1]);
+
+         console.log('Task 5 - Find First Highest Number')
+         let Collection=[
+            700,
+            500,
+            900,
+            400,
+            800
+         ]
+         let Highest =Collection[0]
+         for (let i=1;i<Collection.length;i++){
+            if (Collection[i]>highest){
+                highest=Collection[i]
+            }
+         }
+         console.log(highest);
+
+         console.log('Task 6 - Find Second Highest Number')
+             let collectionn=[
+                700,
+                500,
+                900,
+                400,
+                800
+             ]
+             let Highestt=-Infinity
+             let secondHighest=-Infinity
+             for (let i=0;i<collectionn.length;i++){
+                if(collectionn[i]>Highestt){
+                    secondHighest=Highestt
+                    Highestt=collectionn[i]
+                }else if(collectionn [i]>secondHighest){
+                    secondHighest=collectionn[i]
+                }
+             }
+             console.log("secondHighest:",secondHighest);
+
+             console.log('Task 7 - Find Third Highest Number')
+             let collectionss=[
+                700,
+                500,
+                900,
+                400,
+                800
+             ]
+             let Highesttt=-Infinity
+             let secondHighestt=-Infinity
+             let thirdHighest=-Infinity
+             
+             for(let i=0;i<collectionss.length;i++){
+                let num =collectionss[i]
+
+                if(num>Highesttt){
+                    thirdHighest=secondHighestt
+                    secondHighestt=Highesttt
+                    Highesttt=num
+
+                }else if(num>secondHighestt){
+                    thirdHighest=secondHighestt
+                    secondHighestt=num
+                }else if (num>thirdHighest){
+
+                }
+             }
+             console.log("Third Highest:",thirdHighest);
+
+             console.log('Task 8 - Find Nth Highest Number')
+
+             let Collectionss=[
+                700,
+                500,
+                900,
+                400,
+                800
+             ]
+             let N=4
+             Collectionss.sort((a,b)=>b-a)
+             console.log(N+"th Highest:",Collectionss[N-1]);
+
+                
+             
+</script>
