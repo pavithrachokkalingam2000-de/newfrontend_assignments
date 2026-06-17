@@ -1,0 +1,114 @@
+<script>
+    
+     console.log('TASK 1 -Push & Pop (Movie List)')
+
+     let movies=["GOAT","Leo","Master"]
+        console.log('before movies',movies)
+        movies.push("GHILLI")
+        console.log('after movies',movies);
+
+        movies.pop("MASTER")
+        console.log('after the pop',movies);
+
+        console.log(movies);
+
+        console.log('Task 2-Shift & Unshift (Hero List)')
+        const heroes=["ajith","suriya","sk"]
+        console.log('before heroes',heroes);
+        heroes.unshift("vijay")
+        console.log('after heroes',heroes);
+
+        heroes.shift("ajith")
+        console.log('after the heroes',heroes);
+
+        console.log(heroes);
+
+        console.log('Task 3 – Fruits Management')
+
+        const fruits=["apple","mango","orange"]
+        console.log('before fruits',fruits);
+        fruits.push("bananas","grapes")
+        console.log('after fruits',fruits);
+
+        fruits.pop("grapes")
+        console.log('after the pop',fruits);
+        fruits.unshift("pineapple")
+        console.log("after fruits",fruits);
+
+        fruits.shift("apple")
+        console.log('after fruits',fruits);
+        console.log(fruits);
+
+        console.log('Task 4 – Student Object')
+
+        const student={name:"sudhan",course:"mern",city:"chennai"}
+          console.log("student name:",student.name);
+          console.log("course:",student.course);
+          console.log("city:",student.city);
+
+          console.log("student name:",student["name"]);
+          console.log("course:",student["course"]);
+          console.log("city:",student["city"]);
+
+          console.log('Task 5 – Mobile Store (Array of Objects)')
+          const mobiles=[{
+               brand:"samsung",
+               price:20000
+          },
+
+          {
+            brand:"iphone",
+            price:80000
+          },
+
+          {
+            brand:"oneplus",
+            price:35000
+          }
+   
+          ]
+          for(let i=0;i<mobiles.length;i++){
+                  console.log(mobiles[i].brand+" - "+mobiles[i].price);
+
+          }
+
+          console.log('Task 6 – Movie Collection Report (Array of Objects)')
+
+          let movie=[
+            {
+                movie:"GOAT",
+                collection:800
+            },
+            {
+                movie:"LEO",
+                collection:600
+            },
+            {
+                movie:"Master",
+                collection:500
+            }
+          ]
+          let totalcollection=0;
+            let highestcollection=0;
+            let highestmovie="";
+
+
+          for (let i=0;i<movie.length;i++){
+            totalcollection+=movie[i].collection;
+            
+            if(movie[i].collection>highestcollection){
+                highestcollection=movie[i].collection;
+                highestmovie=movie[i].movie;
+            }
+
+          }
+          console.log("total collection:",totalcollection);
+          console.log("highest collection:",highestcollection);
+          console.log("movie name with highestcollection:",highestmovie);
+
+
+
+
+        
+
+</script>
