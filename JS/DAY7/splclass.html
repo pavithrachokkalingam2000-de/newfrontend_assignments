@@ -1,0 +1,114 @@
+<script>
+    console.log('Task-1 Find missing Number')
+    const a=[1,2,3,5]
+    for (let i =1;i<=a.length+1;i++)
+         if (!a.includes(i)){
+            console.log(i);
+         }
+
+    console.log('Task-2  Find First Non-Repeated Character')
+    const b="programming" 
+    for(let i=0;i<b.length;i++){
+        if (b.indexOf(b[i])===b.lastIndexOf(b[i])){
+            console.log(b[i]);
+            break;
+        }
+    }
+
+    console.log('Task-3 Find First Repeated Character')
+    const c="javascript"
+    let seen=[]
+
+    for(let char of c){
+        if(seen.includes(char)){
+            console.log(char)
+            break;
+        }
+        seen.push(char);
+    }
+
+    console.log('Task-4 Move All Zeros To End')
+    const arr=[1,0,2,0,3,4,0]
+    let result=arr.filter(num=>num!==0);
+
+    while (result.length<arr.length){
+        result.push(0)
+    }
+    console.log(result);
+
+    console.log('Task-5 Count Occurrencess')
+    const hero=["vijay","ajith","vijay","sk"]
+    let count={}
+    for (let name of hero){
+        count[name]=(count[name]||0)+1
+    }
+    for (let key in count){
+        console.log(key+"="+count[key]);
+    }
+
+    console.log('Task-6 Find Most Frequent Element')
+     let array=[1,2,2,3,2,4,1]
+     let Count={}
+     let max=0
+     let results;
+
+     for(let num of array){
+        Count[num]=(Count[num]||0)+1
+        if(Count[num]>max){
+            max=Count[num]
+            results=num
+        }
+     }
+     console.log(results);
+
+     console.log('Task-7 Separate Even & Odd')
+     let Number=[1,2,3,4,5,6]
+
+     let even=[]
+     let odd=[]
+
+     for (let num of Number){
+        if (num%2===0){
+            even.push(num);
+
+        }else{
+            odd.push(num);
+        }
+     }
+     console.log("Even:",even);
+     console.log("ODD",odd);
+
+     console.log('Task-8 Rotate Array Left Oncce')
+     const heroes=["Vijay","Ajith","Suriya","SK"]
+
+     const last=heroes.pop()
+     heroes.unshift(last);
+     console.log(heroes);
+
+
+     console.log('Task-9  Rotate Array Right Once')
+
+     const actor=["Vijay","Ajith","Suriya","SK"]
+
+     const lastt=actor.pop()
+     actor.unshift(last);
+     console.log(actor);
+
+     console.log('Task-10  Find Second Longest Name')
+
+     let Array=["Vijay","Ajith","Sivakarthikeyan","Dhanush"]
+
+     let sorted=Array.sort((a,b)=>b.length-a.length);
+     console.log(sorted[1]);
+
+
+
+
+
+
+
+
+
+
+
+</script>

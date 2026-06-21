@@ -1,0 +1,126 @@
+<script>
+
+    console.log('Task 1')
+
+    let name="pavithra"
+    console.log(name)
+
+    name="kaviya"
+    console.log(name);
+
+    console.log('Task 2')
+
+    if (true){
+        let city="chennai";
+    }
+    // console.log(city);
+
+    console.log('Task 3')
+    const course="MERN"
+    console.log(course);
+
+    // course="JAVA"
+    // console.log(course);
+    
+
+    console.log('Task 4 Arrow function')
+     const greet =()=>{
+        console.log("Welcome to Javascript")
+     };
+
+     greet();
+
+     console.log('Task 5 - Arrow Function With Parameters')
+      
+     const showHero=(heroName)=>{
+        console.log(`Hero Name:${heroName}`);
+     }
+     showHero("vijay");
+
+     console.log('Task 6 - Arrow Function Addition')
+     const add=(a,b)=>{
+        console.log(a+b);
+     }
+     add(10,20);
+
+     console.log('Task 7 - Template Literals')
+     let hero="vijay"
+     console.log(`My favourite hero is ${hero}`);
+
+     console.log('Task 8 - Template Literals Multiple Values')
+
+     let Name= "Surendar"
+     let Course="MERN"
+     let City="Chennai"
+     console.log(`Name:${Name},Course:${Course},City:${City}`);
+
+     console.log('Task 9 - Array Destructuring')
+
+     const arr=["Vijay","Ajith","Suriya"]
+     const[hero1,hero2]=arr
+     console.log(hero1,hero2);
+
+     console.log('Task 10 - Object Destructuring')
+
+     const obj={
+          namee:"Sudhan",
+          coursee:"MERN",
+          city:"Chennai"
+          }
+         const {namee,coursee}=obj
+         console.log(namee,coursee);
+
+      console.log('Task 11 - Spread Operator (Array Copy)')   
+
+      let array=["HTML","CSS","JavaScript"]
+
+    
+      let array1=[...array,"REACT"]
+      console.log(array1);
+
+      console.log('Task 12 - Spread Operator (Merge Arrays)')
+      const Hero1=["vijay","ajith"]
+      const Hero2=["suriya","sk"]
+
+      const merge=[...Hero1,...Hero2]
+      console.log(merge);
+
+     console.log('Task 13 - Spread Operator (Object Copy)')
+              let student={
+               name:"Sudhan",
+               city:"Chennai"
+             }
+
+             let student1={
+             ...student,
+             course:"MERN"
+              } ;
+               console.log(student1);     
+               
+               console.log('Task 14 - Rest Parameter')
+               function total(...numbers){
+                    console.log(numbers);
+               }
+                 total(10,20,30,40);
+
+                console.log('Task 15 - Rest + Sum')
+
+               function Sum(...numbers){
+                   
+
+                let total=0
+
+                for(let num of numbers){
+                    total+=num
+                }
+                console.log(total);
+               }
+               Sum(10,20,30,40,50);   
+               
+
+                   
+                  
+
+
+
+</script>

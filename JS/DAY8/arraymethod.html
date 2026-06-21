@@ -1,10 +1,136 @@
 <script>
-    const arr=[1,2,3,4,5,6,7]
-    const check=arr.include(4)
-    console.log('check',arr);
+    // const arr=[1,2,3,4,5,6,7]
+    // const check=arr.include(4)
+    // console.log('check',arr);
 
-    const array=[1,2,3,4,[5,6,7,8],9,10,11]
-    const copy=array.slice(2,6)
-    console.log('copy of array',copy);
+    // const array=[1,2,3,4,[5,6,7,8],9,10,11]
+    // const copy=array.slice(2,6)
+    // console.log('copy of array',copy);
+
+    console.log('Task-1-push() Method')
+    let arr=["HTML","CSS","JavaScript"]
+    console.log('before arr',arr);
+    arr.push("React")
+    console.log('after arr',arr);
+    arr.push("NODE.js")
+    console.log('after arr',arr);
+
+    console.log('Task 2 – pop() Method')
+    let array=["HTML","CSS","JavaScript","React"]
+    let removedElement=array.pop()
+    console.log("Removed element:",removedElement);
+    console.log("updated array:",array);
+
+    console.log('Task 3 – shift() Method')
+    const fruits=["Apple","Mango","Orange","Banana"]
+    let removedelement=fruits.shift()
+    console.log("Removed element:",removedelement);
+    console.log("updated fruits:",fruits);
+
+    console.log('Task 4 – unshift() Method')
+    let hero=["Ajith","Suriya","SK"]
+    hero.unshift("vijay");
+    hero.unshift("Dhanush")
+
+    console.log(hero);
+
+    console.log('Task 5 – splice() Method')
+    let Arr=["HTML","CSS","Bootstrap","React"]
+    Arr.splice(2,1,"Javascript");
+    console.log(Arr);
+
+    console.log('Task 6 – slice() Method')
+    let name=["HTML","CSS","JavaScript","React","Node"]
+    let copy=name.slice(2,4)
+    console.log('afterchange',copy);
+
+    console.log('Task 7 – Object Looping')
+        let student = {
+
+              name:"Sudhan",
+
+              course:"MERN",
+
+              city:"Chennai",
+
+              age:25
+
+             };
+        for (let key in student){
+            console.log(key +":"+student[key]);
+        }
+
+
+      console.log('Task 8 – Array of Objects Looping') 
+      let arrobj=[
+         {
+           name:"Vijay",
+           movie:"GOAT"
+         },
+
+         {
+            name:"Ajith",
+             movie:"Vidaamuyarchi"
+          },
+
+         {
+            name:"Suriya",
+            movie:"Kanguva"
+           }
+         ]
+
+          for (let i=0;i<arrobj.length;i++){
+          console.log(arrobj[i].name+":"+arrobj[i].movie);
+          }
+
+          console.log('Task 9 – join() Method')
+
+          let Hero=["Vijay","Ajith","Suriya","SK"]
+          console.log(Hero.join());
+
+          console.log('Task 10 – includes() Method')
+          let course=["HTML","CSS","JavaScript","React"]
+
+          if(course.includes("React")){
+            console.log("Course Found")
+          }else{
+            console.log("Course not Found")
+          }
+
+          console.log('Bonus Methods for Practice')
+          console.log('Contact method')
+
+          let frontEnd=["HTML","CSS"]
+          let backEnd=["JAVASCRIPT","NODE"]
+          let fullstack=frontEnd.concat(backEnd)
+
+          console.log(fullstack);
+
+          console.log('Index of')
+          let courses=["HTML","CSS","JAVASCRIPT","NODE"]
+          console.log(courses.indexOf("JAVASCRIPT"));
+
+          console.log('lastIndexOf')
+
+          let numbers=[10,20,30,40,50];
+          console.log(numbers.lastIndexOf(40));
+
+          console.log('Reverse')
+          let heroes=["vijay","ajith","dhanush","sk"]
+          heroes.reverse()
+          console.log(heroes);
+
+          console.log('sort')
+          let Fruits=["Banana","Apple","Mango"]
+          Fruits.sort()
+          console.log(Fruits);
+
+          console.log('toString')
+          let languages=["HTML","CSS","JAVASCRIPT"]
+          console.log(languages.toString());
+
+          console.log('length')
+          let students=["Sudhan","arun","kumar","rahul"];
+          console.log(students.length);
 
 </script>

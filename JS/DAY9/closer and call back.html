@@ -1,0 +1,153 @@
+<script>
+    // const parent=()=>{
+    //     // let bank="savings"
+    //     // const child=()=>{
+    //     //     console.log(bank);
+    //     // }
+
+    // }
+
+    // const savings=(amount)=>{
+    //     let amount=10000
+    //     const balancecheck=()=>{
+    //         amount+=addingf
+    //         console.log(amount);
+
+    //     }
+    //     return balancecheck
+    // }
+    // const balancecheck=savings
+
+     console.log('Task 1-Scope task')
+     let hero = "Vijay";
+     function showHero(){
+        console.log("Function:",hero);
+     }
+     showHero()
+     if(true){
+        console.log("If block:",hero);
+
+     }
+
+     for(let i=0;i<1;i++){
+        console.log("Loop:",hero);
+     }
+
+     console.log('Task 2')
+        const movie = ()=>{
+        let collection = 800;
+        console.log(collection);
+        
+     }
+     movie()
+    
+     console.log('Task 3')
+       if(true){
+
+         var actor1 = "Ajith";
+
+        let actor2 = "Vijay";
+
+        }
+        console.log(actor1);
+    
+
+        console.log('Named Function Tasks')
+        console.log('Task 4')
+        function showMovies(){
+            console.log("GOAT Movie Released");
+        }
+        showMovies();
+
+
+        console.log('Task 5')
+        const add = (a,b)=>{
+            console.log(a+b);
+       };
+       add(10,20);
+
+       console.log('Anonymous Function Tasks')
+       console.log('Task 6')
+       
+       function booking(callback){
+          callback();
+       }
+       booking(()=>{
+          console.log("Booking Confirmed");
+       
+       })
+
+       console.log('Task 7')
+
+        setTimeout(()=>{
+            console.log("Moovie started");
+
+        },2000);
+
+     console.log('Callback Function Tasks')
+     console.log('Task 8')
+     
+     function processOrder(callback){
+        console.log("Order Received");
+        callback();
+     }
+     function deliverOrder(){
+        console.log("Order Delivered");
+     }
+     
+     processOrder(deliverOrder);
+
+     console.log('Closer Task')
+     console.log('Task 8')
+
+     function createCounter(){
+        let count=0;
+
+        return function(){
+            count++;
+            console.log("Count:",count);
+
+        }
+     }
+     const counter =createCounter()
+       counter()
+       counter()
+       counter()
+
+      console.log('Task 10')
+      function createBankaccount(){
+        let balance=5000
+
+        return{
+            deposite:function(amount){
+             balance += amount;
+            console.log("Deposited:",amount);
+
+            },
+
+            withdraw: function(amount)  {
+          balance -= amount;
+         console.log("Withdraw:",amount)
+
+           },
+           
+            checkBalance: function(){
+            console.log("Final Balance:",balance);
+        }
+
+           
+        }
+
+        }
+        const account=createBankaccount();
+
+        account.deposite(1000);
+        account.withdraw(500);
+        account.checkBalance();
+
+           
+            
+
+
+
+</script>
