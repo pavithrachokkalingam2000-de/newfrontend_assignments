@@ -1,0 +1,125 @@
+
+<script>
+    console.log('Task 1')
+     const heroes=["vijay","ajith","suriya"];
+     const upperHeroes=heroes.map(hero=>hero.toUpperCase());
+     console.log(upperHeroes);
+   
+     console.log('Task 2')
+     const collections=[100,200,300,400];
+     const data=collections.map(collection=>collection*10)
+     console.log(data);
+
+     console.log('Task 3')
+     const movies=["GOAT","LEO","MASTER"]
+     const updatedmovies=movies.map(movie=>"movies: "+movie);
+     console.log(updatedmovies);
+
+     console.log('Filter Task')
+     console.log('Task 4')
+     const collection=[100,500,800,200,900]
+     const greatercollection=collection.filter((e,i)=>e>500);
+     console.log(greatercollection);
+
+     console.log('Task 5')
+      const marks=[35,80,20,90,45]
+      const passmark=marks.filter((e,i)=>e>=35);
+      console.log(passmark);
+
+      console.log('Task 6')
+      const actors=["vijay","ajith","suriya","sk"]
+      const allactors=actors.filter(actors=>actors.length>4);
+      console.log(allactors);
+
+      console.log('Find Task')
+      console.log('Task 7')
+      const Hero=["vijay","ajith","suriya"]
+      const findhero=Hero.find((i)=>i==="ajith");
+      console.log(findhero);
+
+      console.log('Task 8')
+      const Collections=[100,500,800,200]
+      const findCollection=Collections.find((e,i)=>e>400);
+      console.log(findCollection);
+
+      console.log('findIndex Tasks')
+      console.log('Task 9')
+      const Actor=["vijay","ajith","suriya"]
+      const indexActor=Actor.findIndex(Actor=>Actor==="suriya");
+      console.log(indexActor);
+
+      console.log('Task 10')
+      const movie=["GOAT","LEO","MASTER"]
+      const indexMovie=movie.findIndex(movie=>movie==="LEO")
+      console.log(indexMovie);
+
+      console.log('Some Tasks')
+      console.log('Task 11')
+      const Mark=[35,80,90,20]
+      const failed=Mark.some(mark=>mark<35);
+      console.log(failed);
+
+      console.log('Task 12')
+      const arr=[100.200,900]
+      const arrdata=arr.some(arr=>arr>800);
+      console.log(arrdata);
+
+      console.log('every Task')
+      console.log('Task 13')
+      const students=[50,70,90,40]
+      const passed=students.every(students=>students>=35);
+      console.log(passed);
+
+      console.log('Task 14')
+      const ages=[20,25,30,35]
+      const datas=ages.every(ages=>ages>18);
+      console.log(datas);
+
+      console.log('Reduce Tasks')
+      console.log('Task 15')
+      const Datas=[100,200,300,400]
+      const totalDatas=Datas.reduce((total,Datas)=>{
+        return(total+Datas)
+
+      },0);
+      console.log(totalDatas);
+
+
+      console.log('Intermediate interview Tasks')
+      console.log('Task 21')
+      const numbers=[100,500,800,200]
+      const highest=numbers.reduce((max,num)=>{
+        return num>max ? num:max
+      });
+
+      console.log(highest);
+
+      console.log('Task 22')
+      const Numbers=[100,500,800,200]
+      const lowest=Numbers.reduce((min,Num)=>{
+        return Num<min ? Num:min
+      });
+      console.log(lowest);
+
+      console.log('Task 23')
+      const Arr=[10,15,20,25,30]
+      const evenNumbers=Arr.filter(Arr=>Arr%2===0);
+      console.log(evenNumbers);
+
+
+
+
+
+
+   
+
+     
+
+
+
+
+
+
+
+
+</script>

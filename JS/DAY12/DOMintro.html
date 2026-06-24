@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM intro</title>
+</head>
+<body>
+
+    <h3>Task 1</h3>
+
+
+    <h1 id="title">Welcome</h1>
+
+    <h3>Task 2</h3>
+    <p class="Course">React</p>
+
+    <h3>Task 3</h3>
+     <input id="username" type="text">
+
+     <h3>Task 4</h3>
+     <img id="new" src="old.jpg"/>
+
+     <h3>Task 5</h3>
+     <a id="website" href="#">visit</a>
+
+     
+
+    <script>
+        const heading= document.getElementById("title");
+        heading.innerText="welcome to Javascript DOM"
+        const para=document.querySelector(".Course");
+        para.innerText="Mern Stack"
+        const input=document.getElementById("username");
+        input.value="Sudhan"
+        const img=document.querySelector("#new");
+        img.src="new.jpg"
+        const link=document.getElementById("website");
+        link.href="https://google.com"
+
+    </script>
+    
+</body>
+</html>
