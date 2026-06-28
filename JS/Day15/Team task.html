@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team task</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    
+    <textarea id="text" onkeyup="countChar()"></textarea>
+    <h2 id="result1">Total characters:0</h2>
+
+    <h1>Task 2</h1>
+
+    <input type="numbers" id="age">
+    <button onclick="checkAge()">Check</button>
+
+    <h2 id="result2"></h2>
+
+    <h1>Task 3</h1>
+    <button onclick="toggleMode()">Dark Mode</button>
+
+    <h1>Task 4</h1>
+    <input type="Number" id="ticket">
+    <button onclick="calculateTicket()">calcultate ticket</button>
+    <h2 id="result3"></h2>
+
+    <h1>Task 5</h1>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="role" placeholder="Role">
+    <input type="text" id="company" placeholder="Company">
+    <button onclick="generate()">Generate</button> 
+    <div id="card1"></div>
+
+    <h1>Task 6</h1>
+    <input type="text" id="hero">
+    <button onclick="searchHero()">search</button>
+    <h2 id="result4"></h2>
+
+    <h1>Task 7</h1>
+    <input type="number" id="number">
+    <button onclick="checkLucky()">Check</button>
+    <h2 id="result5"></h2>
+
+    <h1>Task 8</h1>
+    <input type="text" id="product" placeholder="Product">
+    <input type="number" id="qty" placeholder="Quantity">
+    <input type="number" id="price" placeholder="Price">
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result6"></div>
+
+    <h1>Task 9</h1>
+    <button onclick="quote()">show Quote</button>
+    <h2 id="result7"></h2>
+
+    <h1>Task 10</h1>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="course" placeholder="Course">
+    <button onclick="generator()">Generator</button>
+    <div id="card2"></div>
+
+    <h1>Bonus Task</h1>
+    <input type="number" id="amount">
+    <button onclick="deposit()"> Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="balance()"> Check Balance</button>
+    <h2 id="result8"></h2>
+
+
+
+
+
+
+
+    <script>
+         
+       function countChar(){
+        let text=document.getElementById("text").value;
+        document.getElementById("result1").innerHTML="Total characters:" +text.length;
+       }  
+
+       function checkAge(){
+        let age=document.getElementById("age").value;
+        if(age<=12){
+            document.getElementById("result2").innerHTML="child"; 
+        }
+        else if(age<=19){
+            document.getElementById("result2").innerHTML="Teenagers";
+
+        }
+        else if(age<=59){
+            document.getElementById("result2").innerHTML="Adult";
+
+        }
+        else{
+            document.getElementById("result2").innerHTML="Senior Citizen";
+        }
+       }
+
+       let dark=false;
+       function toggleMode(){
+        if (dark==false){
+            document.body.style.background="black";
+            document.body.style.color="white";
+            event.target.innerHTML="Light Mode";
+            dark=true;
+        }
+        else{
+            document.body.style.background="white";
+            document.body.style.color="black";
+            event.target.innerHTML="Dark Moode";
+            dark=false;
+        }
+       }
+
+       function calculateTicket(){
+        let ticket=document.getElementById("ticket").value;
+        let total=ticket*150;
+        result3.innerHTML="Total Amount: $"+total;
+
+       }
+
+       function generate(){
+        let name=document.getElementById("name").value;
+        let role=document.getElementById("role").value;
+        let company=document.getElementById("company").value;
+
+        card1.innerHTML=`
+        <h2>${name}</h2>
+        <p>${role}</p>
+        <p>${company}</p>`;
+
+       }
+
+       let heroes=["Vijay","Ajith","Suriya","Sk","Dhanush"];
+       function searchHero(){
+        let hero=document.getElementById("hero").value;
+
+        if(heroes.includes(hero)){
+            result4.innerHTML="Found";
+
+    
+        }
+        else{
+            result4.innerHTML="Not Found";
+        }
+
+       }
+
+       function checkLucky(){
+        let number=Number(document.getElementById("number").value);
+        if(number==7 ||number==14||number==28){
+        result5.innerHTML="Lucky Number";
+
+        }
+        else{
+            result5.innerHTML="Normal Number";
+        }
+       }
+       function calculate(){
+        let product=document.getElementById("product").value;
+        let qty=document.getElementById("qty").value;
+        let price=document.getElementById("price").value; 
+
+        let total=qty*price;
+        result6.innerHTML=`
+        <h3>Product:${product}</h3>
+        <h3>Quantity:${qty}</h3>
+        <h3>Total:${total}</h3>`
+       }
+
+       let quotes=[
+        "Never Give Up",
+        "Belive Yourself",
+        "Success Needs Hard Work",
+        "Dream Big",
+        "Stay Positive"
+       ];
+       function quote(){
+        let random=Math.floor(Math.random()*quotes.length);
+        result7.innerHTML=quotes[random];
+       }
+
+       let id =1001;
+       function generator(){
+        let name=document.getElementById("name").value;
+        let course=document.getElementById("course").value;
+
+        card2.innerHTML=`
+        <h2>${name}</h2>
+        <p>Course :${course}</p>
+        <p>ID:STU${id}</p>`;
+
+        id++;
+       }
+
+       let total=0;
+       function deposit(){
+        let amount=Number(document.getElementById("amount").value);
+        total+=amount;
+        result8.innerHTML="Balance: $"+total;
+
+       }
+       function withdraw(){
+        let amount=Number(document.getElementById("amount").value);
+        if(amount<=total){
+            total-=amount;
+            result8.innerHTML="Balance:$"+total;
+
+        }
+        else{
+            result8.innerHTML="Insufficient Balance";
+
+        }
+        function balance(){
+            result8.innerHTML="Balance:$"+total;
+        }
+       }
+
+
+
+    </script>   
+
+
+
+</body>
+</html>

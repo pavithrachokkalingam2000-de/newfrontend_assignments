@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+</head>
+<body>
+
+
+    <div>
+
+        <form>
+
+            <input type="text"  id="Name"  placeholder="Name">
+            <input type="text"  id="Email"  placeholder="Email">
+            <input type="text"  id="Age"  placeholder="Age">
+
+            <button onclick="register()">Register</button>
+
+            <div id="card"></div>
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+     <script>
+        function register(){
+
+          let Name=document.getElementById("Name").value;
+          let Email=document.getElementById("Email").value;
+          let Age=document.getElementById("Age").value;
+
+          document.getElementById("card").innerHTML=
+                          <h3>Registration details</h3>
+                       Name:{name}
+                        Email:{Email}
+                        Age:{Age}
+
+          
+                        
+         
+            
+        }
+     </script>
+
+
+
+</body>
+</html>
